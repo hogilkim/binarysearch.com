@@ -12,3 +12,4 @@ class Solution:
                 stack.append(s[i])
             i += 1
         return "".join(stack)
+        
