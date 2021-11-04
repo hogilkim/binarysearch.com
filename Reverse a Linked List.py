@@ -7,10 +7,9 @@ class Solution:
         if node == None or node.next == None:
             return node
         
-        curr = node.next
-        prev = node
-        prev.next = None
-        while curr != None:
+        curr = node
+        prev = None
+        while curr:
             temp = curr.next
             curr.next = prev
             prev = curr
